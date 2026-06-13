@@ -54,6 +54,8 @@ class ProfileAPIView(APIView):
         return Response({
             "id": user.id,
             "email": user.email,
+            "username": user.username,
+            "phone_number": user.phone_number,
             "is_staff": user.is_staff,
             "is_superuser": user.is_superuser,
         })
